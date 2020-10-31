@@ -1,8 +1,29 @@
 {
   "192.168.1.142": {
     "/": {
-      "_railsgoat_session": {
-        "value": "L1Fqd1h5QjFmNWhUbjU1ZWZXL1ZhYTVEWVpZSkgrc0lPSGt3SFloNGlIN2p0WVdtcFV5Z2lJdkQwU0JISmFTRm9aUFVPc20wMWZxUklZM2F6ZGJFL2d0TURJWVdyK1JSdVVjWFJrR1NtTUFjUUE3ZFJKa2NOcmNnMzlpKzI1U0t3SkVqNS94REEwYTRkM3MwZnBaT0RObnFVeSthaUhTOTQzUy9jTVFXSWdRajhqTEhsNDJPQ0JxdDc3TVg2R3RyLS1wWkFCaUgzVWkyamRUeXNkeUlnR01nPT0%3D--cbe69f145ddfd742591c042a985f36341957c352",
+      "PHPSESSID": {
+        "value": "pun90p8n7mha8dgeorkphb20e6",
+        "expires": null,
+        "secure": false,
+        "port": null,
+        "version": 0
+      },
+      "showhints": {
+        "value": "1",
+        "expires": null,
+        "secure": false,
+        "port": null,
+        "version": 0
+      },
+      "username": {
+        "value": "admin",
+        "expires": null,
+        "secure": false,
+        "port": null,
+        "version": 0
+      },
+      "uid": {
+        "value": "24",
         "expires": null,
         "secure": false,
         "port": null,
