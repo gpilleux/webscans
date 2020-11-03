@@ -1,0 +1,1175 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscan SYSTEM "/var/lib/nikto/docs/nikto.dtd">
+<niktoscan>
+<niktoscan hoststest="0" options="--host http://192.168.1.142:81/ -Format xml -o /home/kali/apps/nikto/scans/nikto-mutilldae-3.xml" version="2.1.6" scanstart="Tue Nov  3 18:06:02 2020" scanend="Wed Dec 31 19:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="192.168.1.142" targethostname="192.168.1.142" targetport="81" targetbanner="Apache/2.4.7 (Ubuntu)" starttime="2020-11-03 18:06:02" sitename="http://192.168.1.142:81/" siteip="http://192.168.1.142:81/" hostheader="192.168.1.142" errors="0" checks="6897">
+
+
+<item id="999961" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie PHPSESSID created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999961" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie showhints created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.25]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999957" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999102" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999103" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA["robots.txt" contains 8 entries which should be manually viewed.]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/robots.txt]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/robots.txt]]></iplink>
+</item>
+
+<item id="600050" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[Apache/2.4.7 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<statistics elapsed="1604444766" itemsfound="" itemstested="6897" endtime="2020-11-03 18:06:06" />
+</scandetails>
+
+</niktoscan>
+
+
+</niktoscan>
+<niktoscan hoststest="0" options="--host http://192.168.1.142:81/ -Format xml -o /home/kali/apps/nikto/scans/nikto-mutilldae-3.xml" version="2.1.6" scanstart="Tue Nov  3 18:06:45 2020" scanend="Wed Dec 31 19:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="192.168.1.142" targethostname="192.168.1.142" targetport="81" targetbanner="Apache/2.4.7 (Ubuntu)" starttime="2020-11-03 18:06:45" sitename="http://192.168.1.142:81/" siteip="http://192.168.1.142:81/" hostheader="192.168.1.142" errors="0" checks="6897">
+
+
+<item id="999961" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie PHPSESSID created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999961" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Cookie showhints created without the httponly flag]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999986" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Retrieved x-powered-by header: PHP/5.5.9-1ubuntu4.25]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999957" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999101" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[X-XSS-Protection header has been set to disable XSS Protection. There is unlikely to be a good reason for this.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999100" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[Uncommon header 'logged-in-user' found, with contents: ]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999103" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999996" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA["robots.txt" contains 8 entries which should be manually viewed.]]></description>
+<uri><![CDATA[/robots.txt]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/robots.txt]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/robots.txt]]></iplink>
+</item>
+
+<item id="600050" osvdbid="0" osvdblink="http://osvdb.org/0" method="HEAD">
+<description><![CDATA[Apache/2.4.7 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999967" osvdbid="0" osvdblink="http://osvdb.org/0" method="VSCOUFDU">
+<description><![CDATA[Web Server returns a valid response with junk HTTP methods, this may cause false positives.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="999972" osvdbid="0" osvdblink="http://osvdb.org/0" method="DEBUG">
+<description><![CDATA[DEBUG HTTP verb may show server debugging information. See http://msdn.microsoft.com/en-us/library/e8z01xdh%28VS.80%29.aspx for details.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/]]></iplink>
+</item>
+
+<item id="000560" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/index.php?page=../../../../../../../../../../etc/passwd: The PHP-Nuke Rocket add-in is vulnerable to file traversal, allowing an attacker to view any file on the host. (probably Rocket, but could be any index.php)]]></description>
+<uri><![CDATA[/index.php?page=../../../../../../../../../../etc/passwd]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?page=../../../../../../../../../../etc/passwd]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?page=../../../../../../../../../../etc/passwd]]></iplink>
+</item>
+
+<item id="750510" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/phpinfo.php: Output from the phpinfo() function was found.]]></description>
+<uri><![CDATA[/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;]]></iplink>
+</item>
+
+<item id="001384" osvdbid="12184" osvdblink="http://osvdb.org/12184" method="GET">
+<description><![CDATA[/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.]]></description>
+<uri><![CDATA[/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/data/: Directory indexing found.]]></description>
+<uri><![CDATA[/data/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/data/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/data/]]></iplink>
+</item>
+
+<item id="001637" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/data/: This might be interesting...]]></description>
+<uri><![CDATA[/data/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/data/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/data/]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/includes/: Directory indexing found.]]></description>
+<uri><![CDATA[/includes/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/includes/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/includes/]]></iplink>
+</item>
+
+<item id="001702" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/includes/: This might be interesting...]]></description>
+<uri><![CDATA[/includes/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/includes/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/includes/]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/passwords/: Directory indexing found.]]></description>
+<uri><![CDATA[/passwords/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/passwords/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/passwords/]]></iplink>
+</item>
+
+<item id="001790" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/passwords/: This might be interesting...]]></description>
+<uri><![CDATA[/passwords/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/passwords/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/passwords/]]></iplink>
+</item>
+
+<item id="001795" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/phpmyadmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.]]></description>
+<uri><![CDATA[/phpmyadmin/changelog.php]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpmyadmin/changelog.php]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpmyadmin/changelog.php]]></iplink>
+</item>
+
+<item id="001796" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/phpmyadmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.]]></description>
+<uri><![CDATA[/phpmyadmin/ChangeLog]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpmyadmin/ChangeLog]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpmyadmin/ChangeLog]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/test/: Directory indexing found.]]></description>
+<uri><![CDATA[/test/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/test/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/test/]]></iplink>
+</item>
+
+<item id="001894" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/test/: This might be interesting...]]></description>
+<uri><![CDATA[/test/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/test/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/test/]]></iplink>
+</item>
+
+<item id="002989" osvdbid="3233" osvdblink="http://osvdb.org/3233" method="GET">
+<description><![CDATA[/phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.]]></description>
+<uri><![CDATA[/phpinfo.php]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpinfo.php]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpinfo.php]]></iplink>
+</item>
+
+<item id="002989" osvdbid="3233" osvdblink="http://osvdb.org/3233" method="GET">
+<description><![CDATA[/index.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.]]></description>
+<uri><![CDATA[/index.php]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/images/: Directory indexing found.]]></description>
+<uri><![CDATA[/images/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/images/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/images/]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/styles/: Directory indexing found.]]></description>
+<uri><![CDATA[/styles/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/styles/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/styles/]]></iplink>
+</item>
+
+<item id="003584" osvdbid="3233" osvdblink="http://osvdb.org/3233" method="GET">
+<description><![CDATA[/icons/README: Apache default file found.]]></description>
+<uri><![CDATA[/icons/README]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/icons/README]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/icons/README]]></iplink>
+</item>
+
+<item id="003854" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/?_CONFIG[files][functions_page]=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="003855" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/?npage=-1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></iplink>
+</item>
+
+<item id="003856" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/?npage=1&content_dir=http://cirt.net/rfiinc.txt?%00&cmd=ls]]></iplink>
+</item>
+
+<item id="003857" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/?show=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/?show=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/?show=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/?show=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005046" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?1=lol&PAGES[lol]=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?1=lol&PAGES[lol]=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?1=lol&PAGES[lol]=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?1=lol&PAGES[lol]=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005047" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?AML_opensite=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?AML_opensite=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?AML_opensite=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?AML_opensite=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005048" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?AMV_openconfig=1&AMV_serverpath=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?AMV_openconfig=1&AMV_serverpath=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?AMV_openconfig=1&AMV_serverpath=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?AMV_openconfig=1&AMV_serverpath=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005049" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?CONFIG[MWCHAT_Libs]=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?CONFIG[MWCHAT_Libs]=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?CONFIG[MWCHAT_Libs]=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?CONFIG[MWCHAT_Libs]=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005050" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?ConfigDir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?ConfigDir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?ConfigDir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?ConfigDir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005051" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?DIR_PLUGINS=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?DIR_PLUGINS=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?DIR_PLUGINS=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?DIR_PLUGINS=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005052" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?G_JGALL[inc_path]=http://cirt.net/rfiinc.txt?%00: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?G_JGALL[inc_path]=http://cirt.net/rfiinc.txt?%00]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?G_JGALL[inc_path]=http://cirt.net/rfiinc.txt?%00]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?G_JGALL[inc_path]=http://cirt.net/rfiinc.txt?%00]]></iplink>
+</item>
+
+<item id="005053" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?HomeDir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?HomeDir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?HomeDir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?HomeDir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005054" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?Lang=AR&Page=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?Lang=AR&Page=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?Lang=AR&Page=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?Lang=AR&Page=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005055" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?Madoa=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?Madoa=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?Madoa=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?Madoa=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005056" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?RP_PATH=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?RP_PATH=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?RP_PATH=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?RP_PATH=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005057" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005058" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid]=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid]=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid]=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?_REQUEST=&_REQUEST[option]=com_content&_REQUEST[Itemid]=1&GLOBALS=&mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005059" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?abg_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?abg_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?abg_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?abg_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005060" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?abs_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?abs_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?abs_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?abs_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005061" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?abs_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?abs_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?abs_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?abs_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005062" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?adduser=true&lang=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?adduser=true&lang=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?adduser=true&lang=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?adduser=true&lang=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005063" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?adodb=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?adodb=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?adodb=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?adodb=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005064" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?ads_file=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?ads_file=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?ads_file=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?ads_file=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005065" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?arquivo=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?arquivo=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?arquivo=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?arquivo=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005066" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?back=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?back=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?back=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?back=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005067" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?base==http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?base==http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?base==http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?base==http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005068" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?basePath=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?basePath=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?basePath=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?basePath=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005069" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?bibtexrootrel=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?bibtexrootrel=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?bibtexrootrel=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?bibtexrootrel=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005070" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?blog_dc_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?blog_dc_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?blog_dc_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?blog_dc_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005071" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?blog_theme=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?blog_theme=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?blog_theme=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?blog_theme=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005072" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?body=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?body=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?body=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?body=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005073" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?class_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?class_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?class_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?class_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005074" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?classified_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?classified_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?classified_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?classified_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005075" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?cms=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?cms=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?cms=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?cms=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005076" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?config[\"sipssys\"]=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?config[\&quot;sipssys\&quot;]=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?config[\&quot;sipssys\&quot;]=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?config[\&quot;sipssys\&quot;]=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005077" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??&cmd=id: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??&cmd=id]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??&cmd=id]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??&cmd=id]]></iplink>
+</item>
+
+<item id="005078" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??cmd=id: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??cmd=id]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??cmd=id]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?config[root_ordner]=http://cirt.net/rfiinc.txt??cmd=id]]></iplink>
+</item>
+
+<item id="005079" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?config_atkroot=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?config_atkroot=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?config_atkroot=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?config_atkroot=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005080" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?configuration=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?configuration=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?configuration=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?configuration=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005081" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?custom_admin_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?custom_admin_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?custom_admin_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?custom_admin_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005082" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?dateiPfad=http://cirt.net/rfiinc.txt??&cmd=ls: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?dateiPfad=http://cirt.net/rfiinc.txt??&cmd=ls]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?dateiPfad=http://cirt.net/rfiinc.txt??&cmd=ls]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?dateiPfad=http://cirt.net/rfiinc.txt??&cmd=ls]]></iplink>
+</item>
+
+<item id="005083" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?de=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?de=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?de=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?de=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005084" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?dept=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?dept=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?dept=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?dept=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005085" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?do=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?do=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?do=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?do=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005086" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?exec=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?exec=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?exec=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?exec=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005087" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?ext=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?ext=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?ext=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?ext=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005088" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?faq_path=http://cirt.net/rfiinc.txt??&cmd=id: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?faq_path=http://cirt.net/rfiinc.txt??&cmd=id]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?faq_path=http://cirt.net/rfiinc.txt??&cmd=id]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?faq_path=http://cirt.net/rfiinc.txt??&cmd=id]]></iplink>
+</item>
+
+<item id="005089" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?file_name[]=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?file_name[]=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?file_name[]=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?file_name[]=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005089" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?file_Nikto[]=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?file_Nikto[]=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?file_Nikto[]=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?file_Nikto[]=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005090" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?file_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?file_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?file_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?file_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005091" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?fileloc=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?fileloc=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?fileloc=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?fileloc=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005092" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?from=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?from=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?from=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?from=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005093" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?func=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?func=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?func=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?func=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005094" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?function=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?function=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?function=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?function=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005095" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?function=custom&custom=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?function=custom&custom=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?function=custom&custom=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?function=custom&custom=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005096" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?gOo=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?gOo=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?gOo=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?gOo=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005097" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?gen=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?gen=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?gen=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?gen=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005098" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?get=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?get=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?get=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?get=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005099" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?home_name=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?home_name=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?home_name=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?home_name=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005099" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?home_Nikto=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?home_Nikto=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?home_Nikto=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?home_Nikto=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005100" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?ilang=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?ilang=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?ilang=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?ilang=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005101" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?inc_dir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?inc_dir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?inc_dir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?inc_dir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005102" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?inc_dir=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?inc_dir=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?inc_dir=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?inc_dir=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005103" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?includeDir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?includeDir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?includeDir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?includeDir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005104" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?includeFooter=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?includeFooter=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?includeFooter=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?includeFooter=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005105" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?includesdir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?includesdir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?includesdir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?includesdir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005106" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?insPath=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?insPath=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?insPath=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?insPath=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005107" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?lang=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?lang=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?lang=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?lang=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005108" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?language=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?language=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?language=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?language=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005109" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?language=en&main_page=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?language=en&main_page=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?language=en&main_page=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?language=en&main_page=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005110" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?lizge=http://cirt.net/rfiinc.txt??&cmd=ls: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?lizge=http://cirt.net/rfiinc.txt??&cmd=ls]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?lizge=http://cirt.net/rfiinc.txt??&cmd=ls]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?lizge=http://cirt.net/rfiinc.txt??&cmd=ls]]></iplink>
+</item>
+
+<item id="005111" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?lng=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?lng=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?lng=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?lng=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005112" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?load=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?load=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?load=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?load=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005113" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?loadpage=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?loadpage=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?loadpage=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?loadpage=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005114" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?main_tabid=1&main_content=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?main_tabid=1&main_content=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?main_tabid=1&main_content=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?main_tabid=1&main_content=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005115" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?may=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?may=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?may=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?may=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005116" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?middle=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?middle=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?middle=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?middle=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005117" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?mode=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?mode=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?mode=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?mode=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005118" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?mode=http://cirt.net/rfiinc.txt??&cmd=: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?mode=http://cirt.net/rfiinc.txt??&cmd=]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?mode=http://cirt.net/rfiinc.txt??&cmd=]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?mode=http://cirt.net/rfiinc.txt??&cmd=]]></iplink>
+</item>
+
+<item id="005119" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?modpath=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?modpath=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?modpath=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?modpath=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005121" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?mosConfig_absolute_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?mosConfig_absolute_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005122" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?news7[\"functions\"]=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?news7[\&quot;functions\&quot;]=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?news7[\&quot;functions\&quot;]=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?news7[\&quot;functions\&quot;]=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005123" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?news_include_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?news_include_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?news_include_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?news_include_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005124" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?open=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?open=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?open=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?open=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005125" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?option=com_custompages&cpage=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?option=com_custompages&cpage=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?option=com_custompages&cpage=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?option=com_custompages&cpage=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005127" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?page=http://cirt.net/rfiinc.txt?%00: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?page=http://cirt.net/rfiinc.txt?%00]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?page=http://cirt.net/rfiinc.txt?%00]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?page=http://cirt.net/rfiinc.txt?%00]]></iplink>
+</item>
+
+<item id="005129" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pagehttp://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pagehttp://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pagehttp://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pagehttp://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005130" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?page[path]=http://cirt.net/rfiinc.txt??&cmd=ls: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?page[path]=http://cirt.net/rfiinc.txt??&cmd=ls]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?page[path]=http://cirt.net/rfiinc.txt??&cmd=ls]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?page[path]=http://cirt.net/rfiinc.txt??&cmd=ls]]></iplink>
+</item>
+
+<item id="005131" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pagename=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pagename=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pagename=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pagename=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005131" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pageNikto=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pageNikto=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pageNikto=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pageNikto=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005132" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pager=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pager=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pager=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pager=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005133" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pagina=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pagina=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pagina=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pagina=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005134" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?path_to_folder=http://cirt.net/rfiinc.txt??cmd=id: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?path_to_folder=http://cirt.net/rfiinc.txt??cmd=id]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?path_to_folder=http://cirt.net/rfiinc.txt??cmd=id]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?path_to_folder=http://cirt.net/rfiinc.txt??cmd=id]]></iplink>
+</item>
+
+<item id="005135" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pg=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pg=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pg=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pg=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005136" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?pg=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?pg=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?pg=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?pg=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005137" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?phpbb_root_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?phpbb_root_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?phpbb_root_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?phpbb_root_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005138" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?plugin=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?plugin=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?plugin=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?plugin=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005139" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?principal=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?principal=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?principal=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?principal=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005140" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?proMod=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?proMod=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?proMod=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?proMod=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005141" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?proMod=http://cirt.net/rfiinc.txt??cmd: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?proMod=http://cirt.net/rfiinc.txt??cmd]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?proMod=http://cirt.net/rfiinc.txt??cmd]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?proMod=http://cirt.net/rfiinc.txt??cmd]]></iplink>
+</item>
+
+<item id="005142" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?project=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?project=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?project=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?project=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005143" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?repinc=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?repinc=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?repinc=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?repinc=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005144" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?root_prefix=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?root_prefix=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?root_prefix=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?root_prefix=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005145" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?root_prefix=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?root_prefix=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?root_prefix=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?root_prefix=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005146" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?section=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?section=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?section=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?section=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005147" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?site=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?site=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?site=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?site=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005148" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?site_path=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?site_path=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?site_path=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?site_path=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005149" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?styl[top]=http://cirt.net/rfiinc.txt???: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?styl[top]=http://cirt.net/rfiinc.txt???]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?styl[top]=http://cirt.net/rfiinc.txt???]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?styl[top]=http://cirt.net/rfiinc.txt???]]></iplink>
+</item>
+
+<item id="005150" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?template=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?template=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?template=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?template=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005151" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?templates_dir=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?templates_dir=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?templates_dir=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?templates_dir=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005152" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?theme=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?theme=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?theme=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?theme=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005153" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?themepath=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?themepath=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?themepath=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?themepath=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005154" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?themesdir=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?themesdir=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?themesdir=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?themesdir=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005155" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?this_path=http://cirt.net/rfiinc.txt??: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?this_path=http://cirt.net/rfiinc.txt??]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?this_path=http://cirt.net/rfiinc.txt??]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?this_path=http://cirt.net/rfiinc.txt??]]></iplink>
+</item>
+
+<item id="005156" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?txt=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?txt=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?txt=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?txt=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005157" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?up=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?up=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?up=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?up=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005158" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?url=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?url=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?url=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?url=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005159" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?w=http://cirt.net/rfiinc.txt?: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?w=http://cirt.net/rfiinc.txt?]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?w=http://cirt.net/rfiinc.txt?]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?w=http://cirt.net/rfiinc.txt?]]></iplink>
+</item>
+
+<item id="005160" osvdbid="5292" osvdblink="http://osvdb.org/5292" method="GET">
+<description><![CDATA[/index.php?way=http://cirt.net/rfiinc.txt???????????????: RFI from RSnake's list (http://ha.ckers.org/weird/rfi-locations.dat) or from http://osvdb.org/]]></description>
+<uri><![CDATA[/index.php?way=http://cirt.net/rfiinc.txt???????????????]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/index.php?way=http://cirt.net/rfiinc.txt???????????????]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/index.php?way=http://cirt.net/rfiinc.txt???????????????]]></iplink>
+</item>
+
+<item id="006495" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/phpmyadmin/: phpMyAdmin directory found]]></description>
+<uri><![CDATA[/phpmyadmin/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpmyadmin/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpmyadmin/]]></iplink>
+</item>
+
+<item id="006530" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/.git/index: Git Index file may contain directory listing information.]]></description>
+<uri><![CDATA[/.git/index]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/.git/index]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/.git/index]]></iplink>
+</item>
+
+<item id="006609" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/.git/HEAD: Git HEAD file found. Full repo details may be present.]]></description>
+<uri><![CDATA[/.git/HEAD]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/.git/HEAD]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/.git/HEAD]]></iplink>
+</item>
+
+<item id="006672" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/phpmyadmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.]]></description>
+<uri><![CDATA[/phpmyadmin/Documentation.html]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpmyadmin/Documentation.html]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpmyadmin/Documentation.html]]></iplink>
+</item>
+
+<item id="750500" osvdbid="3268" osvdblink="http://osvdb.org/3268" method="GET">
+<description><![CDATA[/webservices/: Directory indexing found.]]></description>
+<uri><![CDATA[/webservices/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/webservices/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/webservices/]]></iplink>
+</item>
+
+<item id="006714" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/webservices/: Webservices found]]></description>
+<uri><![CDATA[/webservices/]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/webservices/]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/webservices/]]></iplink>
+</item>
+
+<item id="006807" osvdbid="0" osvdblink="http://osvdb.org/0" method="GET">
+<description><![CDATA[/.git/config: Git config file found. Infos about repo details may be present.]]></description>
+<uri><![CDATA[/.git/config]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/.git/config]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/.git/config]]></iplink>
+</item>
+
+<item id="007107" osvdbid="3092" osvdblink="http://osvdb.org/3092" method="GET">
+<description><![CDATA[/phpmyadmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.]]></description>
+<uri><![CDATA[/phpmyadmin/README]]></uri>
+<namelink><![CDATA[http://192.168.1.142:81/phpmyadmin/README]]></namelink>
+<iplink><![CDATA[http://192.168.1.142:81/phpmyadmin/README]]></iplink>
+</item>
+
+<statistics elapsed="63" itemsfound="156" itemstested="6897" endtime="2020-11-03 18:07:48" />
+</scandetails>
+
+</niktoscan>
+
+
+</niktoscan>

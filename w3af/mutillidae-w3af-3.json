@@ -118,21 +118,22 @@
             "http://192.168.1.142:82/index.php"
         ], 
         "findings": [
-            "The server header for the remote web server is: \"Apache/2.4.7 (Ubuntu)\".", 
-            "The x-powered-by header for the target HTTP server is \"PHP/5.5.9-1ubuntu4.25\".", 
             "The URI: \"http://192.168.1.142:82/index.php\" has a parameter named: \"do\" with value: \"toggle-bubble-hints\", which is very uncommon and requires manual inspection.", 
             "The URI: \"http://192.168.1.142:82/index.php\" has a parameter named: \"page\" with value: \"./documentation/vulnerabilities.php\", which is very uncommon and requires manual inspection.", 
             "The URI: \"http://192.168.1.142:82/index.php\" has a parameter named: \"PathToDocument\" with value: \"documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php\", which is very uncommon and requires manual inspection.", 
             "The URI: \"http://192.168.1.142:82/index.php\" has a parameter named: \"page-to-frame\" with value: \"styling.php?page-title=Styling with Mutillidae\", which is very uncommon and requires manual inspection.", 
+            "The server header for the remote web server is: \"Apache/2.4.7 (Ubuntu)\".", 
+            "The x-powered-by header for the target HTTP server is \"PHP/5.5.9-1ubuntu4.25\".", 
             "The remote Web server has a custom configuration, in which any not implemented methods that are invoked are defaulted to GET instead of returning a \"Not Implemented\" response.", 
             "The URI: \"http://192.168.1.142:82/\" has a parameter named: \"page\" with value: \"add-to-your-blog.php\", which is very uncommon and requires manual inspection.", 
-            "The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.", 
-            "Found a new virtual host at the target web server, the virtual host name is: \"public\". To access this site you might need to change your DNS resolution settings in order to point \"public\" to the IP address of \"192.168.1.142\".", 
+            "The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 134). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 134). The authentication plugin is most likely incorrectly configured.", 
+            "Found a new virtual host at the target web server, the virtual host name is: \"safe\". To access this site you might need to change your DNS resolution settings in order to point \"safe\" to the IP address of \"192.168.1.142\".", 
+            "Found a new virtual host at the target web server, the virtual host name is: \"mail\". To access this site you might need to change your DNS resolution settings in order to point \"mail\" to the IP address of \"192.168.1.142\".", 
+            "Found a new virtual host at the target web server, the virtual host name is: \"secure\". To access this site you might need to change your DNS resolution settings in order to point \"secure\" to the IP address of \"192.168.1.142\".", 
             "Found a new virtual host at the target web server, the virtual host name is: \"private\". To access this site you might need to change your DNS resolution settings in order to point \"private\" to the IP address of \"192.168.1.142\".", 
+            "Found a new virtual host at the target web server, the virtual host name is: \"ws\". To access this site you might need to change your DNS resolution settings in order to point \"ws\" to the IP address of \"192.168.1.142\".", 
             "The content of \"http://192.168.1.142:82/index.php\" references a non existent domain: \"192.168.1.142\". This can be a broken link, or an internal domain name.", 
-            "The most accurate fingerprint for this HTTP server is: \"['Microsoft-IIS/7.0', 'Microsoft-HTTPAPI/2.0']\".", 
-            "The `autocomplete` authentication plugin was never able to authenticate and get a valid application session using the user-provided configuration settings\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n - The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.", 
-            "The application has no protection against Click-Jacking attacks."
+            "The most accurate fingerprint for this HTTP server is: \"['Microsoft-IIS/7.0', 'Microsoft-HTTPAPI/2.0']\"."
         ], 
         "target_domain": "192.168.1.142"
     }, 
@@ -144,67 +145,13 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Insecure X-XSS-Protection header usage", 
-            "Description": "The remote web server sent 5 HTTP responses with the X-XSS-Protection header with a value of \"0\", which disables Internet Explorer's XSS filter. The first ten URLs which sent the insecure header are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php?V0NlUDn=../../WINNT/system32/cmd.exe?dir c:\\\n - http://192.168.1.142:82/index.php?V0NlUDn=QQArMFB\n - http://192.168.1.142:82/index.php?V0NlUDn=./../../../etc/motd\u0000html\n - http://192.168.1.142:82/index.php\n", 
+            "Description": "The remote web server sent 3 HTTP responses with the X-XSS-Protection header with a value of \"0\", which disables Internet Explorer's XSS filter. The first ten URLs which sent the insecure header are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php?KR7EEMH=dZKugOt\n - http://192.168.1.142:82/index.php\n", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                112, 
-                33, 
-                28, 
-                22, 
-                95
-            ], 
-            "Vulnerable parameter": null, 
-            "POST data": ""
-        }, 
-        {
-            "Severity": "Information", 
-            "URL": "None", 
-            "VulnDB ID": null, 
-            "CWE IDs": [], 
-            "HTTP method": "GET", 
-            "Name": "Server header", 
-            "Description": "The server header for the remote web server is: \"Apache/2.4.7 (Ubuntu)\". This information was found in the request with id 27.", 
-            "Tags": [], 
-            "WASC IDs": [], 
-            "Vulnerability IDs": [
-                27
-            ], 
-            "Vulnerable parameter": null, 
-            "POST data": ""
-        }, 
-        {
-            "Severity": "Information", 
-            "URL": "None", 
-            "VulnDB ID": null, 
-            "CWE IDs": [], 
-            "HTTP method": "GET", 
-            "Name": "Powered-by header", 
-            "Description": "The x-powered-by header for the target HTTP server is \"PHP/5.5.9-1ubuntu4.25\". This information was found in the request with id 27.", 
-            "Tags": [], 
-            "WASC IDs": [], 
-            "Vulnerability IDs": [
-                27
-            ], 
-            "Vulnerable parameter": null, 
-            "POST data": ""
-        }, 
-        {
-            "Severity": "Information", 
-            "URL": "http://192.168.1.142:82/index.php", 
-            "VulnDB ID": null, 
-            "CWE IDs": [], 
-            "HTTP method": "GET", 
-            "Name": "Strange header", 
-            "Description": "The remote web server sent 2 HTTP responses with the uncommon response header \"logged-in-user\", one of the received header values is \"\". The first ten URLs which sent the uncommon header are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php\n", 
-            "Tags": [], 
-            "WASC IDs": [], 
-            "Vulnerability IDs": [
-                112, 
-                33, 
-                28, 
-                22, 
-                95
+                26, 
+                27, 
+                22
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -263,6 +210,24 @@
             "VulnDB ID": null, 
             "CWE IDs": [], 
             "HTTP method": "GET", 
+            "Name": "Interesting HTML comment", 
+            "Description": "A total of 3 HTTP requests contained an HTML comment that includes HTML tags: \" I think the database password is set to blank or perhaps samurai.\n\t\t\tIt depends on whether you installed this web app from irongeeks site or\n\t\t\tare using it inside Kevin Johnsons Samurai web testing framework.\n\t\t\tIt is ok to put the password in HTML comments because no user will ever see\n\t\t\tthis comment. I remember that security instructor saying we should use the\n\t\t\tframework comment symbols (ASP.NET, JAVA, PHP, Etc.)\n\t\t\trather than HTML comments, but we all know those\n\t\t\tsecurity instructors are just making all this up. \". The first ten matching URLs are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php?KR7EEMH=dZKugOt\n - http://192.168.1.142:82/index.php\n", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                26, 
+                27, 
+                22
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Information", 
+            "URL": "http://192.168.1.142:82/index.php", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
             "Name": "Uncommon query string parameter", 
             "Description": "The URI: \"http://192.168.1.142:82/index.php\" has a parameter named: \"page-to-frame\" with value: \"styling.php?page-title=Styling with Mutillidae\", which is very uncommon and requires manual inspection. This information was found in the request with id 22.", 
             "Tags": [], 
@@ -279,16 +244,46 @@
             "VulnDB ID": null, 
             "CWE IDs": [], 
             "HTTP method": "GET", 
-            "Name": "Interesting HTML comment", 
-            "Description": "A total of 5 HTTP requests contained an HTML comment that includes HTML tags: \" I think the database password is set to blank or perhaps samurai.\n\t\t\tIt depends on whether you installed this web app from irongeeks site or\n\t\t\tare using it inside Kevin Johnsons Samurai web testing framework.\n\t\t\tIt is ok to put the password in HTML comments because no user will ever see\n\t\t\tthis comment. I remember that security instructor saying we should use the\n\t\t\tframework comment symbols (ASP.NET, JAVA, PHP, Etc.)\n\t\t\trather than HTML comments, but we all know those\n\t\t\tsecurity instructors are just making all this up. \". The first ten matching URLs are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php?V0NlUDn=../../WINNT/system32/cmd.exe?dir c:\\\n - http://192.168.1.142:82/index.php?V0NlUDn=QQArMFB\n - http://192.168.1.142:82/index.php?V0NlUDn=./../../../etc/motd\u0000html\n - http://192.168.1.142:82/index.php\n", 
+            "Name": "Strange header", 
+            "Description": "The remote web server sent 2 HTTP responses with the uncommon response header \"logged-in-user\", one of the received header values is \"\". The first ten URLs which sent the uncommon header are:\n - http://192.168.1.142:82/\n - http://192.168.1.142:82/index.php\n", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                112, 
-                33, 
-                28, 
-                22, 
-                95
+                26, 
+                27, 
+                22
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Information", 
+            "URL": "None", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
+            "Name": "Server header", 
+            "Description": "The server header for the remote web server is: \"Apache/2.4.7 (Ubuntu)\". This information was found in the request with id 38.", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                38
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Information", 
+            "URL": "None", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
+            "Name": "Powered-by header", 
+            "Description": "The x-powered-by header for the target HTTP server is \"PHP/5.5.9-1ubuntu4.25\". This information was found in the request with id 38.", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                38
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -300,12 +295,12 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Non existent methods default to GET", 
-            "Description": "The remote Web server has a custom configuration, in which any not implemented methods that are invoked are defaulted to GET instead of returning a \"Not Implemented\" response. This information was found in the requests with ids 62 and 72.", 
+            "Description": "The remote Web server has a custom configuration, in which any not implemented methods that are invoked are defaulted to GET instead of returning a \"Not Implemented\" response. This information was found in the requests with ids 32 and 55.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                62, 
-                72
+                32, 
+                55
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -317,27 +312,27 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Uncommon query string parameter", 
-            "Description": "The URI: \"http://192.168.1.142:82/\" has a parameter named: \"page\" with value: \"add-to-your-blog.php\", which is very uncommon and requires manual inspection. This information was found in the request with id 28.", 
+            "Description": "The URI: \"http://192.168.1.142:82/\" has a parameter named: \"page\" with value: \"add-to-your-blog.php\", which is very uncommon and requires manual inspection. This information was found in the request with id 26.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                28
+                26
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
         }, 
         {
             "Severity": "Information", 
-            "URL": "http://192.168.1.142:82/FlMXU", 
+            "URL": "http://192.168.1.142:82/ZVvRU", 
             "VulnDB ID": 29, 
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Strange HTTP response code", 
-            "Description": "The remote web server sent 1 HTTP responses with the uncommon response status code 405 using \"Method Not Allowed\" as message. The first ten URLs which sent the uncommon status code are:\n - http://192.168.1.142:82/FlMXU\n", 
+            "Description": "The remote web server sent 1 HTTP responses with the uncommon response status code 405 using \"Method Not Allowed\" as message. The first ten URLs which sent the uncommon status code are:\n - http://192.168.1.142:82/ZVvRU\n", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                60
+                52
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -349,7 +344,7 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Authentication failure", 
-            "Description": "The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.", 
+            "Description": "The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 134). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 134). The authentication plugin is most likely incorrectly configured.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [], 
@@ -363,13 +358,70 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Virtual host identified", 
-            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"public\". To access this site you might need to change your DNS resolution settings in order to point \"public\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 32, 59, 66 and 148.", 
+            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"safe\". To access this site you might need to change your DNS resolution settings in order to point \"safe\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 26, 73, 79 and 149.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                32, 
-                59, 
-                66, 
+                26, 
+                73, 
+                79, 
+                149
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Low", 
+            "URL": "http://192.168.1.142:82/index.php", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
+            "Name": "Virtual host identified", 
+            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"mail\". To access this site you might need to change your DNS resolution settings in order to point \"mail\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 26, 73, 79 and 146.", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                26, 
+                73, 
+                79, 
+                146
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Low", 
+            "URL": "http://192.168.1.142:82/index.php", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
+            "Name": "Virtual host identified", 
+            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"secure\". To access this site you might need to change your DNS resolution settings in order to point \"secure\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 26, 73, 79 and 147.", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                26, 
+                73, 
+                79, 
+                147
+            ], 
+            "Vulnerable parameter": null, 
+            "POST data": ""
+        }, 
+        {
+            "Severity": "Low", 
+            "URL": "http://192.168.1.142:82/index.php", 
+            "VulnDB ID": null, 
+            "CWE IDs": [], 
+            "HTTP method": "GET", 
+            "Name": "Virtual host identified", 
+            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"private\". To access this site you might need to change your DNS resolution settings in order to point \"private\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 26, 73, 79 and 148.", 
+            "Tags": [], 
+            "WASC IDs": [], 
+            "Vulnerability IDs": [
+                26, 
+                73, 
+                79, 
                 148
             ], 
             "Vulnerable parameter": null, 
@@ -382,14 +434,14 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Virtual host identified", 
-            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"private\". To access this site you might need to change your DNS resolution settings in order to point \"private\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 32, 59, 66 and 152.", 
+            "Description": "Found a new virtual host at the target web server, the virtual host name is: \"ws\". To access this site you might need to change your DNS resolution settings in order to point \"ws\" to the IP address of \"192.168.1.142\". This vulnerability was found in the requests with ids 26, 73, 79 and 150.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                32, 
-                59, 
-                66, 
-                152
+                26, 
+                73, 
+                79, 
+                150
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -401,11 +453,11 @@
             "CWE IDs": [], 
             "HTTP method": "GET", 
             "Name": "Internal hostname in HTML link", 
-            "Description": "The content of \"http://192.168.1.142:82/index.php\" references a non existent domain: \"192.168.1.142\". This can be a broken link, or an internal domain name. This information was found in the request with id 250.", 
+            "Description": "The content of \"http://192.168.1.142:82/index.php\" references a non existent domain: \"192.168.1.142\". This can be a broken link, or an internal domain name. This information was found in the request with id 273.", 
             "Tags": [], 
             "WASC IDs": [], 
             "Vulnerability IDs": [
-                250
+                273
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
@@ -425,41 +477,8 @@
             ], 
             "Vulnerable parameter": null, 
             "POST data": ""
-        }, 
-        {
-            "Severity": "Information", 
-            "URL": "http://host.tld/login", 
-            "VulnDB ID": null, 
-            "CWE IDs": [], 
-            "HTTP method": "GET", 
-            "Name": "Authentication failure", 
-            "Description": "The `autocomplete` authentication plugin was never able to authenticate and get a valid application session using the user-provided configuration settings\n\nThe following are the last log messages from the authentication plugin:\n\n - Logging into the application with user: admin\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - Failed to find an HTML login form at http://host.tld/login (id: 144). The authentication plugin is most likely incorrectly configured.\n - The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.\n - The authentication plugin failed 3 consecutive times to get a valid application session using the user-provided configuration settings.\n\nThe `autocomplete` authentication plugin will be disabled.", 
-            "Tags": [], 
-            "WASC IDs": [], 
-            "Vulnerability IDs": [], 
-            "Vulnerable parameter": null, 
-            "POST data": ""
-        }, 
-        {
-            "Severity": "Medium", 
-            "URL": "None", 
-            "VulnDB ID": 53, 
-            "CWE IDs": [], 
-            "HTTP method": "GET", 
-            "Name": "Click-Jacking vulnerability", 
-            "Description": "The application has no protection against Click-Jacking attacks. This vulnerability was found in the requests with ids 22, 33, 95 and 112.", 
-            "Tags": [], 
-            "WASC IDs": [], 
-            "Vulnerability IDs": [
-                22, 
-                33, 
-                95, 
-                112
-            ], 
-            "Vulnerable parameter": null, 
-            "POST data": ""
         }
     ], 
-    "start-long": "Fri Oct 30 21:22:46 2020", 
-    "start": "1604107366"
+    "start-long": "Tue Nov 03 15:03:53 2020", 
+    "start": "1604433833"
 }
